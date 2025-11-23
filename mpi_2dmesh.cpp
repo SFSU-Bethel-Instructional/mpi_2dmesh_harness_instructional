@@ -48,7 +48,7 @@ parseArgs(int ac, char *av[], AppState *as)
    int rstat = 0;
    int c;
 
-   while ( (c = getopt(ac, av, "va:g:x:y:i:")) != -1) {
+   while ( (c = getopt(ac, av, "va:g:x:y:i:o:")) != -1) {
       switch(c) {
          case 'a': {
                       int action = std::atoi(optarg == NULL ? "-1" : optarg);
